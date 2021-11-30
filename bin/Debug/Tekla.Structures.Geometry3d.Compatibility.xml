@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tekla.Structures.Geometry3d.Compatibility</name>
+    </assembly>
+    <members>
+        <member name="T:Tekla.Structures.Geometry3d.BoxConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.BoxConversions"/> class converts values representing boxes.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.BoxConversions.ToAxisAlignedBox3(Tekla.Structures.Geometry3d.AABB)">
+            <summary>
+            Converts an <see cref="T:Tekla.Structures.Geometry3d.AABB"/> to an <see cref="T:Tekla.Common.Geometry.AxisAlignedBox3"/>.
+            </summary>
+            <param name="axisAlignedBoundingBox">The <see cref="T:Tekla.Structures.Geometry3d.AABB"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.AxisAlignedBox3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.BoxConversions.ToBox3(Tekla.Structures.Geometry3d.OBB)">
+            <summary>
+            Converts an <see cref="T:Tekla.Structures.Geometry3d.OBB"/> to a <see cref="T:Tekla.Common.Geometry.Box3"/>.
+            </summary>
+            <param name="boundingBox">The <see cref="T:Tekla.Structures.Geometry3d.OBB"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Box3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.BoxConversions.ToAABB(Tekla.Common.Geometry.AxisAlignedBox3)">
+            <summary>
+            Converts an <see cref="T:Tekla.Common.Geometry.AxisAlignedBox3"/> to an <see cref="T:Tekla.Structures.Geometry3d.AABB"/>.
+            </summary>
+            <param name="axisAlignedBox">The <see cref="T:Tekla.Common.Geometry.AxisAlignedBox3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.AABB"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.BoxConversions.ToOBB(Tekla.Common.Geometry.Box3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.Box3"/> to an <see cref="T:Tekla.Structures.Geometry3d.OBB"/>.
+            </summary>
+            <param name="box">The <see cref="T:Tekla.Common.Geometry.Box3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.OBB"/>.</returns>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.CoordinateSystemConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.CoordinateSystemConversions"/> class converts values representing coordinate systems.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.CoordinateSystemConversions.ToCoordinateSystem3(Tekla.Structures.Geometry3d.CoordinateSystem)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.CoordinateSystem"/> to a <see cref="T:Tekla.BIM.Geometry.CoordinateSystem3"/>.
+            </summary>
+            <param name="coordinateSystem">The <see cref="T:Tekla.Structures.Geometry3d.CoordinateSystem"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.BIM.Geometry.CoordinateSystem3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.CoordinateSystemConversions.ToCoordinateSystem(Tekla.BIM.Geometry.CoordinateSystem3)">
+            <summary>
+            Converts a <see cref="T:Tekla.BIM.Geometry.CoordinateSystem3"/> to a <see cref="T:Tekla.Structures.Geometry3d.CoordinateSystem"/>.
+            </summary>
+            <param name="coordinateSystem">The <see cref="T:Tekla.BIM.Geometry.CoordinateSystem3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.CoordinateSystem"/>.</returns>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.LineConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.LineConversions"/> class converts structures representing lines
+            from <see cref="N:Tekla.Structures.Geometry3d"/> to <see cref="N:Tekla.Common.Geometry"/> and back.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.LineConversions.ToLine3(Tekla.Structures.Geometry3d.Line)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.Line"/> to a <see cref="T:Tekla.Common.Geometry.Line3"/>.
+            </summary>
+            <param name="line">The <see cref="T:Tekla.Structures.Geometry3d.Line"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Line3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.LineConversions.ToLine3List(System.Collections.Generic.IEnumerable{Tekla.Structures.Geometry3d.Line})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Common.Geometry.Line3"/> values from an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Tekla.Structures.Geometry3d.Line"/> values.
+            </summary>
+            <param name="lines">The collection of <see cref="T:Tekla.Structures.Geometry3d.Line"/> values to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Common.Geometry.Line3"/> values.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.LineConversions.ToLine(Tekla.Common.Geometry.Line3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.Line3"/> to a <see cref="T:Tekla.Structures.Geometry3d.Line"/>.
+            </summary>
+            <param name="line">The <see cref="T:Tekla.Common.Geometry.Line3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.Line"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.LineConversions.ToLineList(System.Collections.Generic.IEnumerable{Tekla.Common.Geometry.Line3})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Structures.Geometry3d.Line"/> values from an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Tekla.Common.Geometry.Line3"/> values.
+            </summary>
+            <param name="lines">The collection of <see cref="T:Tekla.Common.Geometry.Line3"/> values to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Structures.Geometry3d.Line"/> values.</returns>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.PlaneConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.PlaneConversions"/> class converts structures representing planes
+            from <see cref="N:Tekla.Structures.Geometry3d"/> to <see cref="N:Tekla.Common.Geometry"/>.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToPlane3(Tekla.Structures.Geometry3d.GeometricPlane)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> to a <see cref="T:Tekla.Common.Geometry.Plane3"/>.
+            </summary>
+            <param name="geometricPlane">The <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Plane3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToPlane3(Tekla.Structures.Model.Plane)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Model.Plane"/> to a <see cref="T:Tekla.Common.Geometry.Plane3"/>.
+            </summary>
+            <param name="plane">The <see cref="T:Tekla.Structures.Model.Plane"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Plane3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToPlane3List(System.Collections.Generic.IEnumerable{Tekla.Structures.Geometry3d.GeometricPlane})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> values from an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Tekla.Common.Geometry.Plane3"/> values.
+            </summary>
+            <param name="geometricPlanes">The collection of <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> values to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Common.Geometry.Plane3"/> values.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToFace3(Tekla.Structures.Solid.Face)">
+            <summary>
+            Converts an <see cref="T:Tekla.Structures.Solid.Face"/> to a <see cref="T:Tekla.BIM.Geometry.Face3"/>.
+            </summary>
+            <param name="face"> The <see cref="T:Tekla.Structures.Solid.Face"/> to convert.</param>
+            <returns> The resulting <see cref="T:Tekla.BIM.Geometry.Face3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToFace3(Tekla.Structures.Model.Polygon)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Model.Polygon"/> to a <see cref="T:Tekla.BIM.Geometry.Face3"/>.
+            </summary>
+            <param name="polygon"> The <see cref="T:Tekla.Structures.Model.Polygon"/> to convert.</param>
+            <returns> The resulting <see cref="T:Tekla.BIM.Geometry.Face3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToFace3(Tekla.Structures.Model.Polygon,Tekla.Common.Geometry.UnitVector3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Model.Polygon"/> to a <see cref="T:Tekla.BIM.Geometry.Face3"/>.
+            </summary>
+            <param name="polygon">The <see cref="T:Tekla.Structures.Model.Polygon"/> to convert.</param>
+            <param name="normal">The expected normal of the <see cref="T:Tekla.Structures.Model.Polygon"/> face.</param>
+            <returns> The resulting <see cref="T:Tekla.BIM.Geometry.Face3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.Normal(Tekla.Structures.Model.Plane)">
+            <summary>
+            Gets the normal to the <see cref="T:Tekla.Structures.Model.Plane"/> as a <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.
+            </summary>
+            <param name="plane">The <see cref="T:Tekla.Structures.Model.Plane"/> value to get the normal of.</param>
+            <returns>The normal as a <see cref="T:Tekla.Structures.Geometry3d.Vector"/> value.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.ToGeometricPlane(Tekla.Structures.Model.Plane)">
+            <summary>
+            Creates a <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> from a <see cref="T:Tekla.Structures.Model.Plane"/> value.
+            </summary>
+            <param name="plane">The <see cref="T:Tekla.Structures.Model.Plane"/> to convert</param>
+            <returns>A <see cref="T:Tekla.Structures.Geometry3d.GeometricPlane"/> value.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.PlaneConversions.GetFacePoints(Tekla.Structures.Model.Polygon)">
+            <summary>
+            Gets the contour points of the <see cref="T:Tekla.Structures.Model.Polygon"/>, when interpreted as a face.
+            </summary>
+            <param name="polygon">The <see cref="T:Tekla.Structures.Model.Polygon"/> to get the contour points for.</param>
+            <returns>The contour points of the face for <paramref name="polygon"/>.</returns>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.SegmentConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.SegmentConversions"/> class converts structures representing segments
+            from <see cref="N:Tekla.Structures.Geometry3d"/> to <see cref="N:Tekla.Common.Geometry"/> and back.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToSegment3(Tekla.Structures.Geometry3d.LineSegment)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> to a <see cref="T:Tekla.Common.Geometry.Segment3"/>.
+            </summary>
+            <param name="lineSegment">The <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Segment3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToSegment3List(System.Collections.Generic.IEnumerable{Tekla.Structures.Geometry3d.LineSegment})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Common.Geometry.Segment3"/> values from an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> values.
+            </summary>
+            <param name="lineSegments">The collection of <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> values to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Common.Geometry.Segment3"/> values.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToPolySegment3(Tekla.Structures.Model.Polygon)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Model.Polygon"/> to a <see cref="T:Tekla.BIM.Geometry.PolySegment3"/>.
+            </summary>
+            <param name="polygon">The <see cref="T:Tekla.Structures.Model.Polygon"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.BIM.Geometry.PolySegment3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToPolySegment3(Tekla.Structures.Geometry3d.PolyLine)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.PolyLine"/> to a <see cref="T:Tekla.BIM.Geometry.PolySegment3"/>.
+            </summary>
+            <param name="polyLine">The <see cref="T:Tekla.Structures.Geometry3d.PolyLine"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.BIM.Geometry.PolySegment3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToLineSegment(Tekla.Common.Geometry.Segment3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.Segment3"/> to a <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/>.
+            </summary>
+            <param name="segment">The <see cref="T:Tekla.Common.Geometry.Segment3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.SegmentConversions.ToLineSegmentList(System.Collections.Generic.IEnumerable{Tekla.Common.Geometry.Segment3})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> values from an <see cref="T:System.Collections.Generic.IEnumerable`1"/> of <see cref="T:Tekla.Common.Geometry.Segment3"/> values.
+            </summary>
+            <param name="segments">The collection of <see cref="T:Tekla.Common.Geometry.Segment3"/> values to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Structures.Geometry3d.LineSegment"/> values.</returns>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.StructuresExtensions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.StructuresExtensions"/> class provides a set of extension methods
+            for types in the <see cref="N:Tekla.Structures.Geometry3d"/> namespace.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.StructuresExtensions.CopyCoordinates(Tekla.Structures.Geometry3d.Point,Tekla.Common.Geometry.Vector3)">
+            <summary>
+            Copies the coordinates from the <see cref="T:Tekla.Common.Geometry.Vector3"/> to the <paramref name="target"/> <see cref="T:Tekla.Structures.Geometry3d.Point"/>.
+            </summary>
+            <param name="target">The <see cref="T:Tekla.Structures.Geometry3d.Point"/> to copy the coordinates to.</param>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.Vector3"/> to copy the coordinates from.</param>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.StructuresExtensions.CopyCoordinates(Tekla.Structures.Geometry3d.Vector,Tekla.Common.Geometry.Vector3)">
+            <summary>
+            Copies the coordinates from the <see cref="T:Tekla.Common.Geometry.Vector3"/> to the <paramref name="target"/> <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.
+            </summary>
+            <param name="target">The <see cref="T:Tekla.Structures.Geometry3d.Vector"/> to copy the coordinates to.</param>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.Vector3"/> to copy the coordinates from.</param>
+        </member>
+        <member name="T:Tekla.Structures.Geometry3d.VectorConversions">
+            <summary>
+            The <see cref="T:Tekla.Structures.Geometry3d.VectorConversions"/> class converts structures representing points and vectors
+            from <see cref="N:Tekla.Structures.Geometry3d"/> to <see cref="N:Tekla.Common.Geometry"/>.
+            </summary>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector3(Tekla.Structures.Geometry3d.Point)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.Point"/> or a <see cref="T:Tekla.Structures.Geometry3d.Vector"/> to a <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="point">The Point to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.Vector3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector3(Tekla.Structures.Model.Offset)">
+            <summary>
+            Converts an <see cref="T:Tekla.Structures.Model.Offset"/> to a <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="offset">The Offset to convert.</param>
+            <returns>The resulting Vector3.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToUnitVector3(Tekla.Structures.Geometry3d.Point)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.Point"/> or a <see cref="T:Tekla.Structures.Geometry3d.Vector"/> to a <see cref="T:Tekla.Common.Geometry.UnitVector3"/>.
+            </summary>
+            <param name="point">The Point to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Common.Geometry.UnitVector3"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.TryToUnitVector3(Tekla.Structures.Geometry3d.Point,Tekla.Common.Geometry.UnitVector3@)">
+            <summary>
+            Converts a <see cref="T:Tekla.Structures.Geometry3d.Point"/> or a <see cref="T:Tekla.Structures.Geometry3d.Vector"/> to a <see cref="T:Tekla.Common.Geometry.UnitVector3"/>.
+            </summary>
+            <param name="point">The Point to convert.</param>
+            <param name="unitVector">The converted <see cref="T:Tekla.Common.Geometry.UnitVector3"/> value.</param>
+            <returns>True if the <see cref="T:Tekla.Common.Geometry.UnitVector3"/> is valid; otherwise, false.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector3List(System.Collections.ArrayList)">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Common.Geometry.Vector3"/> from an array list of <see cref="T:Tekla.Structures.Geometry3d.Point"/> or <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.
+            </summary>
+            <param name="points">The list of points or vectors to convert.</param>
+            <returns>The resulting list of Vector3s.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector3List(System.Collections.Generic.IEnumerable{Tekla.Structures.Geometry3d.Point})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Common.Geometry.Vector3"/> from an IEnumerable of Points.
+            </summary>
+            <param name="points">The list of points to convert.</param>
+            <returns>The resulting list of Vector3s.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector3List(Tekla.Structures.Solid.Loop)">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Common.Geometry.Vector3"/> from an <see cref="T:Tekla.Structures.Solid.Loop"/>.
+            </summary>
+            <param name="loop">The loop to convert. </param>
+            <returns>The resulting list of Vector3s. </returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPoint(Tekla.Common.Geometry.Vector3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.Vector3"/> to a <see cref="T:Tekla.Structures.Geometry3d.Point"/>.
+            </summary>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPoint(Tekla.Common.Geometry.UnitVector3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.UnitVector3"/> to a <see cref="T:Tekla.Structures.Geometry3d.Point"/>.
+            </summary>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.UnitVector3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector(Tekla.Common.Geometry.Vector3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.Vector3"/> to a <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.
+            </summary>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToVector(Tekla.Common.Geometry.UnitVector3)">
+            <summary>
+            Converts a <see cref="T:Tekla.Common.Geometry.UnitVector3"/> to a <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.
+            </summary>
+            <param name="vector">The <see cref="T:Tekla.Common.Geometry.UnitVector3"/> to convert.</param>
+            <returns>The resulting <see cref="T:Tekla.Structures.Geometry3d.Vector"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPointArrayList(System.Collections.ArrayList)">
+            <summary>
+            Creates an array list of <see cref="T:Tekla.Structures.Geometry3d.Point"/> from an array list of <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="vectors">The array list of <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting array list of <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPointArrayList(System.Collections.Generic.IEnumerable{Tekla.Common.Geometry.Vector3})">
+            <summary>
+            Creates an array list of <see cref="T:Tekla.Structures.Geometry3d.Point"/> from a list of <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="vectors">The list of <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting array list of <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPointList(System.Collections.ArrayList)">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Structures.Geometry3d.Point"/> from an array list of <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="vectors">The array list of <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+        <member name="M:Tekla.Structures.Geometry3d.VectorConversions.ToPointList(System.Collections.Generic.IEnumerable{Tekla.Common.Geometry.Vector3})">
+            <summary>
+            Creates a list of <see cref="T:Tekla.Structures.Geometry3d.Point"/> from a list of <see cref="T:Tekla.Common.Geometry.Vector3"/>.
+            </summary>
+            <param name="vectors">The list of <see cref="T:Tekla.Common.Geometry.Vector3"/> to convert.</param>
+            <returns>The resulting list of <see cref="T:Tekla.Structures.Geometry3d.Point"/>.</returns>
+        </member>
+    </members>
+</doc>
